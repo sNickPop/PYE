@@ -4,7 +4,6 @@ while True:
     num = input("Enter a number: ")
     if num == "done":
             break
-    print(num)
     try:
         number = int(num)
     except:
