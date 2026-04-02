@@ -1,0 +1,22 @@
+hrs = input('Enter Hours:')
+h = float(hrs)
+if h > 40:
+    hr = h - 40
+rate = input('Enter Rate:')
+r = float(rate)
+if h > 40:
+    rt = 1.5 * r
+if h > 40:
+    gross = (40 * r)
+else:
+    gross = h * r
+if h > 40:
+    ovt = hr * rt
+    gpay = gross + ovt
+if h > 40:
+    print(gpay)
+else: 
+    print(gross)
+
+
+      
