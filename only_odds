@@ -1,0 +1,12 @@
+start = input('Enter first number: ')
+end = input('Enter last number: ')
+total = 0
+#Have to convert string type to integer
+n_start = int(start)
+n_end = int(end)
+for n in range(n_start, n_end):
+    if n % 2 != 0:
+        total += n
+        # the += is shorthand for total = total + n
+new_sum = total
+print(new_sum)
