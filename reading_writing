@@ -1,0 +1,9 @@
+f = open('you_text_here.txt', 'r')
+# put whatever text you want python to read here
+output = open('output.txt', 'w')
+for l, line in enumerate(f, 1):
+    # the enumerate command tells python that the first line is 1 instead of 0
+    if l % 2 == 0:
+        output.write(line)
+f.close()
+output.close()
