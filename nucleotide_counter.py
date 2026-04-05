@@ -1,5 +1,5 @@
-from collections import Counter
-f = open('rosalind_dna.txt', 'r')
+f = open('dna_file', 'r')
+#insert your DNA file above
 s = f.read()
 f.close()
 nucleotide_count = {}
