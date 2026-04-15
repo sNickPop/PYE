@@ -1,0 +1,17 @@
+fname = input("Enter file name: ")
+fh = open(fname)
+total = 0
+count = 0
+#need this in for the average
+for line in fh:
+    if not line.startswith("X-DSPAM-Confidence:"):
+        continue
+    num_line = line.rstrip()
+    num_line = line.strip("X-DSPAM-Confidence:")
+    #this strips the lines down to just the numbers so you can float them
+    con_nums = (float(num_line))
+    total += con_nums
+    # the "+=" is shorthand for saying total = total + con_num
+    count += 1
+print("Average spam confidence:", total/count)
+
